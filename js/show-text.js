@@ -1,6 +1,5 @@
 let newsText = document.querySelectorAll('.news-text');
 let visibleHeight = newsText[0].clientHeight;
-// let fullHeight = newsText.scrollHeight;
 let showAllText = document.querySelectorAll('.show-hide-description');
 
 for (let i = 0; i < newsText.length; i++) {
