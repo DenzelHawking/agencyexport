@@ -1,0 +1,274 @@
+/* main */
+#header {
+    position: relative;
+    background: #ffffff;
+}
+
+.header__top {
+    height: 7vw;
+    background: url(../images/header_bg.png) no-repeat;
+    background-size: contain;
+}
+
+#logo {
+    background: url(../images/logo.png) no-repeat;
+    background-size: contain;
+    width: 5vw;
+    height: 5vw;
+    margin-left: 9vw;
+    position: relative;
+}
+
+#logo::before {
+    content: 'Министерство экономического развития и торговли Республики Таджикистана';
+    width: 46vw;
+    height: 5vw;
+    position: absolute;
+    left: 6vw;
+    font-size: 1.8vw;
+    line-height: 2vw;
+    font-weight: bold;
+    padding-top: .5vw;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+/* main menu */
+
+
+/* slider */
+#header__slider {
+    position: relative;
+    height: 30vw;
+}
+
+.slider-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity .3s;
+    opacity: 0;
+}
+
+.slider-img:nth-child(3) {
+    background-position: 50% -76px !important;
+}
+
+.slider-img.active {
+    opacity: 1;
+}
+
+.slider-dots {
+    position: absolute;
+    bottom: 0;
+    padding: 1vw;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dot-item {
+    position: relative;
+    width: 1.5vw;
+    height: 1.5vw;
+    margin: 0 .2vw;
+    cursor: pointer;
+    border-radius: 1.5vw;
+    border: .2vw solid #e9e9e9;
+}
+
+.dot-item:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1vw;
+    width: .7vw;
+    height: .7vw;
+    background: #e9e9e9;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.dot-item.active:before {
+    opacity: 1;
+}
+
+
+/* menu button */
+.menu-button {
+    position: absolute;
+    top: 3.5vw;
+    transform: translateY(-50%);
+    right: 1vw;
+    width: 5vw;
+    height: 3vw;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.menu-line {
+    position: absolute;
+    width: 100%;
+    height: .7vw;
+    background: #a7a7a7;
+    border-radius: .5vw;
+    transform: translate(-50%, -50%);
+    transition: .3s;
+}
+
+.menu-line:nth-child(1) {
+    top: 0;
+    left: 50%;
+}
+
+.menu-line:nth-child(2) {
+    top: 50%;
+    left: 50%;
+}
+
+.menu-line:nth-child(3) {
+    top: 100%;
+    left: 50%;
+}
+
+.menu-button.active .menu-line:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.menu-button.active .menu-line:nth-child(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.menu-button.active .menu-line:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+
+@media screen and (min-width: 767px) {
+    /* menu */
+    .menu-button {
+        display: none;
+    }
+
+    .header__menu {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+      
+    .menu-item {
+        padding: 15px;
+        cursor: pointer;
+        position: relative;
+        font-weight: bold;
+        border: 1px solid transparent;
+    }
+      
+    .menu-item:hover {
+        border: 1px solid #0056ac;
+        background: linear-gradient(#58a4f0 10%, #206AB6);
+        color: #fff;
+    }
+
+    /* sub-menu */
+    .sub-list-menu {
+        height: 0;
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        overflow: hidden;
+        transition: opacity .5s;
+        z-index: 1;
+        background: #fff;
+    }
+    
+    .sub-list-menu li {
+        padding: 10px 15px;
+        border-bottom: 1px solid #ccc;
+        box-sizing: border-box;
+        width: 200px;
+        color: #a7a7a7;
+        font-weight: normal;
+    }
+    
+    .sub-list-menu li:hover {
+        color: #206AB6;
+    }
+    
+    .menu-item:hover .sub-list-menu {
+        height: auto;
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    /* menu */
+    .header__menu {
+        position: absolute;
+        top: 7vw;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        height: 0;
+        opacity: 0;
+        width: 100%;
+        background: #fff;
+        overflow: hidden;
+        z-index: 2;
+        transition: opacity .3s;
+        border-bottom: 2px solid #ccc;
+      }
+
+      .header__menu.is-open {
+          height: auto;
+          opacity: 1;
+      }
+      
+      .menu-item {
+          padding: 5px 0;
+          font-weight: bold;
+      }
+      
+
+    /* sub-menu */
+    .sub-list-menu {
+        list-style-type: none;
+        padding-left: 5px;
+        margin: 0;
+    }
+    
+    .sub-list-menu li {
+        padding: 0;
+        box-sizing: border-box;
+        color: #a7a7a7;
+        font-weight: normal;
+    }
+
+    .sub-list-menu li:before {
+        content: '- ';
+    }
+    
+    .sub-list-menu li:hover {
+        color: #206AB6;
+    }
+}
