@@ -1,7 +1,18 @@
 let sliderIMG = document.querySelectorAll('.slider-img');
-let dot = document.querySelectorAll('.dot-item');
+let dotsBlock = document.querySelector('.slider-dots');
 let prevDot = 0;
 let presDot = 0;
+
+
+
+for (let i = 0; i < sliderIMG.length; i++) {
+    let dotItem = document.createElement('div');
+    dotItem.classList.add('dot-item');
+    dotsBlock.appendChild(dotItem);
+}
+
+let dot = document.querySelectorAll('.dot-item');
+dot[0].classList.add('active');
 
 dot.forEach((elem, index) => {
     elem.onclick = () => changeSlider(index);
