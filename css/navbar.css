@@ -42,6 +42,11 @@
 
 
 /* Contacts */
+.contacts__title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
 .contacts__list {
   margin: 0;
   padding: 0;
