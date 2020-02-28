@@ -52,18 +52,18 @@
     background-position: center;
     background-repeat: no-repeat;
     transition: opacity .3s;
-    opacity: 0;
+    /* opacity: 0; */
 }
 
-.slider-img:nth-child(3) {
+/* .slider-img:nth-child(3) {
     background-position: 50% -76px !important;
 }
 
 .slider-img.active {
     opacity: 1;
-}
+} */
 
-.slider-dots {
+/* .slider-dots {
     position: absolute;
     bottom: 0;
     padding: 1vw;
@@ -100,7 +100,7 @@
 
 .dot-item.active:before {
     opacity: 1;
-}
+} */
 
 
 /* menu button */
