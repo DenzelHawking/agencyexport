@@ -6,9 +6,9 @@
   .then(response => response.json())
   .then(json => {
     valute = json.Valute;
-    usd.innerHTML = `${(valute.USD.Value * (10 / valute.TJS.Value)).toFixed(2)}`
-    eur.innerHTML = `${(valute.EUR.Value * (10 / valute.TJS.Value)).toFixed(2)}`
-    rub.innerHTML = `${(10 / valute.TJS.Value).toFixed(2)}`
+    usd.innerHTML = `${(valute.USD.Value * (10 / valute.TJS.Value)).toFixed(2)} TJS`
+    eur.innerHTML = `${(valute.EUR.Value * (10 / valute.TJS.Value)).toFixed(2)} TJS`
+    rub.innerHTML = `${(10 / valute.TJS.Value).toFixed(2)} TJS`
   })
 
 
