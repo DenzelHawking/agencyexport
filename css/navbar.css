@@ -41,27 +41,27 @@
 }
 
 
-/* Contacts */
-.contacts__title {
+/* Contacts & Valute */
+.list__title {
   font-size: 25px;
   font-weight: bold;
 }
 
-.contacts__list {
-  margin: 0;
+.list {
+  margin: 0 0 20px 0;
   padding: 0;
   list-style-type: none;
   border: 2px dotted #ccc;
   padding: 20px;
+  color: #3B3B3B;
 }
 
-.contacts__list li {
+.list li {
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
   border-bottom: 1px solid #ccc;
 }
-
 
 
 @media screen and (min-width: 767px) {
