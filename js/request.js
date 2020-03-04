@@ -1,14 +1,30 @@
-  let usd = document.querySelector('.usd');
-  let eur = document.querySelector('.eur');
-  let rub = document.querySelector('.rub');
+let usd = document.querySelector('.usd');
+let eur = document.querySelector('.eur');
+let rub = document.querySelector('.rub');
+
+fetch('http://cors-anywhere.herokuapp.com/nbt.tj/tj/kurs/export_xml.php?date=2020-03-04&export=xmlout')
+.then(response => response.text())
+.then(text => parseXML(text))
+
+
+function parseXML(str) {
+  parser = new DOMParser();
+  xmlDoc = parser.parseFromString(str,"text/xml");
   
-  fetch('https://www.cbr-xml-daily.ru/daily_json.js')
-  .then(response => response.json())
-  .then(json => {
-    valute = json.Valute;
-    usd.innerHTML = `${(valute.USD.Value * (10 / valute.TJS.Value)).toFixed(4)} TJS`
-    eur.innerHTML = `${(valute.EUR.Value * (10 / valute.TJS.Value)).toFixed(4)} TJS`
-    rub.innerHTML = `${(10 / valute.TJS.Value).toFixed(4)} TJS`
-  })
+  const valutes = xmlDoc.getElementsByTagName('Valute');
+  let data = [];
+  for(let i = 0; i < valutes.length; i++) {
+    
+    let res = {};
+    if (valutes[i].children[0].innerHTML === 'USD' || valutes[i].children[0].innerHTML === 'EUR' || valutes[i].children[0].innerHTML === 'RUB') {
+      res.charcode = valutes[i].children[0].innerHTML;
+      res.name = valutes[i].children[2].innerHTML;
+      res.val = valutes[i].children[3].innerHTML;
+      data.push(res);
+    }
+  }
 
-
+  usd.innerHTML = data[0].val;
+  eur.innerHTML = data[1].val;
+  rub.innerHTML = data[2].val;
+  }
