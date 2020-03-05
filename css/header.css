@@ -5,9 +5,9 @@
 }
 
 .header__top {
-    height: 21vw;
+    height: 20.1vw;
     background: url(../images/logo.png) no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 /* main menu */

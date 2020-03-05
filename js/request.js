@@ -18,8 +18,8 @@ function parseXML(str) {
   const valutes = xmlDoc.getElementsByTagName('Valute');
   let data = [];
   for(let i = 0; i < valutes.length; i++) {
-    
     let res = {};
+    
     if (valutes[i].children[0].innerHTML === 'USD' || valutes[i].children[0].innerHTML === 'EUR' || valutes[i].children[0].innerHTML === 'RUB') {
       res.charcode = valutes[i].children[0].innerHTML;
       res.name = valutes[i].children[2].innerHTML;
@@ -31,4 +31,4 @@ function parseXML(str) {
   usd.innerHTML = data[0].val;
   eur.innerHTML = data[1].val;
   rub.innerHTML = data[2].val;
-  }
+}

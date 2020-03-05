@@ -53,11 +53,22 @@
     border-radius: 5px;
     cursor: pointer;
     transition: .5s;
+    display: none;
+}
+
+.shorting-text .show-hide-description {
+    display: block;
+}
+
+.news-text {
+    position: relative;
+    transition: .5s;
 }
 
 .news-text, .full-news-text {
-    min-height: 300px;
-    /* margin-bottom: 50px; */
+    height: 300px;
+    /* min-height: 300px; */
+    margin-bottom: 50px;
     overflow: hidden;
     line-height: 22px;
     color: #3B3B3B;
@@ -74,9 +85,15 @@
 }
 
 .news-text.hide-text:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(transparent, #fff 80%);;
+    width: 100%;
     height: 100px;
     opacity: 1;
 }
+
 
 
 

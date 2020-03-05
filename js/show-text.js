@@ -1,15 +1,22 @@
 let newsText = document.querySelectorAll('.news-text');
+let newsItem = document.querySelectorAll('.news-item');
 let visibleHeight = newsText[0].clientHeight;
 let showAllText = document.querySelectorAll('.show-hide-description');
 
 for (let i = 0; i < newsText.length; i++) {
     let visibleHeight = newsText[i].clientHeight;
     let fullHeight = newsText[i].scrollHeight;
-    if (fullHeight > visibleHeight) newsText[i].classList.add('hide-text');
+    if (fullHeight > visibleHeight) {
+        newsText[i].classList.add('hide-text');
+        newsItem[i].classList.add('shorting-text')
+    }
 };
     
 showAllText.forEach((elem, index) => {
     elem.onclick = () => {
+        console.log(visibleHeight);
+        console.log(newsText[index].scrollHeight);
+        
         if (elem.classList.contains('openned')) {
             newsText[index].style.height = `${visibleHeight}px`;
             newsText[index].classList.add('hide-text');
