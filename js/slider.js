@@ -3,8 +3,6 @@ let dotsBlock = document.querySelector('.slider-dots');
 let prevDot = 0;
 let presDot = 0;
 
-
-
 for (let i = 0; i < sliderIMG.length; i++) {
     let dotItem = document.createElement('div');
     dotItem.classList.add('dot-item');

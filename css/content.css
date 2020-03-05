@@ -28,12 +28,13 @@
 }
 
 .news-img {
-    /* width: 350px;
-    height: 250px;
-    margin-right: 20px; */
-    background-size: 100%;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.news-item:nth-child(6) .news-img {
+    background-size: cover;
 }
 
 .news-item:nth-child(2) .news-img {
@@ -56,7 +57,7 @@
 
 .news-text, .full-news-text {
     min-height: 300px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     overflow: hidden;
     line-height: 22px;
     color: #3B3B3B;

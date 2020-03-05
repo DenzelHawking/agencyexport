@@ -2,7 +2,11 @@ let usd = document.querySelector('.usd');
 let eur = document.querySelector('.eur');
 let rub = document.querySelector('.rub');
 
-fetch('http://cors-anywhere.herokuapp.com/nbt.tj/tj/kurs/export_xml.php?date=2020-03-04&export=xmlout')
+let data = new Date();
+let fullData = `${data.getFullYear()}-${data.getMonth() + 1}-${data.getDate()}`;
+
+// fetch('http://cors-anywhere.herokuapp.com/nbt.tj/tj/kurs/export_xml.php?date=2020-03-04&export=xmlout')
+fetch(`http://cors-anywhere.herokuapp.com/nbt.tj/tj/kurs/export_xml.php?date=${fullData}&export=xmlout`)
 .then(response => response.text())
 .then(text => parseXML(text))
 
