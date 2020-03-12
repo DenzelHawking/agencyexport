@@ -9,9 +9,17 @@ let fullData = `${data.getFullYear()}-${data.getMonth() + 1}-${data.getDate()}`;
 fetch(`https://cors-anywhere.herokuapp.com/nbt.tj/tj/kurs/export_xml.php?date=${fullData}&export=xmlout`)
 .then(response => response.text())
 .then(text => parseXML(text))
+.catch(err => parseXML(false))
 
 
 function parseXML(str) {
+  if (str === false) {
+    usd.innerHTML = 'Ошибка подключения';
+    eur.innerHTML = 'Ошибка подключения';
+    rub.innerHTML = 'Ошибка подключения';
+    return;
+  }
+
   parser = new DOMParser();
   xmlDoc = parser.parseFromString(str,"text/xml");
   
