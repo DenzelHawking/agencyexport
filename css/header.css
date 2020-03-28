@@ -33,7 +33,7 @@
 }
 
 .slider-img:nth-child(3) {
-    background-position: 50% -76px !important;
+    background-position: 100% 60% !important;
 }
 
 .slider-img.active {
