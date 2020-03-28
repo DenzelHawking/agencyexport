@@ -164,18 +164,18 @@
 /* Gallery */
 #img-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: .5vw;
 }
 
 #img-list > div {
-  height: 18vw;
+  height: 20vw;
   overflow: hidden;
   cursor: pointer;
 }
 
 #img-list img {
-  height: 100%;
+  width: 100%;
 }
 
 @media screen and (min-width: 992px) {
@@ -221,7 +221,7 @@
   }
 
   #img-list > div {
-    height: 35vw;
+    height: 30vw;
   }
 }
 
@@ -245,7 +245,7 @@
   
     #img-list > div {
       width: 95vw;
-      height: 80vw;
+      height: 60vw;
       padding-bottom: 2vw;
     }
 }

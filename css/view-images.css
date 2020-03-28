@@ -29,11 +29,12 @@ body.view-img #img-place {
   margin: auto;
   overflow: hidden;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 .choose-img-place img {
-  width: 100%;
+  width: 90%;
 }
 
 .exits {
