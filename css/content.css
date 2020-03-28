@@ -112,30 +112,34 @@
 
 .reglament__item {
   position: absolute;
-  bottom: 4.2%;
-  height: 20%;
-  border-radius: 5px;
+  height: 15.3%;
+  border-radius: 12px;
 }
 
 .reglament__0 {
-  width: 16%;
-  left: .5%;
+  width: 38.6%;
+  top: 62.1%;
+  left: 8.3%;
 }
 .reglament__1 {
-  width: 17.6%;
-  left: 18.7%;
+  width: 38.6%;
+  left: 8.5%;
+  top: 43.3%;
 }
 .reglament__2 {
-  width: 19.1%;
-  left: 38.3%;
+  width: 38.6%;
+  left: 56%;
+  top: 62.1%;
 }
 .reglament__3 {
-  width: 18.2%;
-  left: 59.8%;
+  width: 38.6%;
+  left: 56%;
+  top: 83.3%;
 }
 .reglament__4 {
-  width: 19%;
-  left: 80%;
+  width: 38.6%;
+  left: 56%;
+  top: 43.4%;
 }
 
 .reglament__list::before, .ministry-item::before {
@@ -156,6 +160,24 @@
   padding-bottom: 20px;
 }
 
+
+/* Gallery */
+#img-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: .5vw;
+}
+
+#img-list > div {
+  height: 18vw;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#img-list img {
+  height: 100%;
+}
+
 @media screen and (min-width: 992px) {
   #content {
     display: grid;
@@ -170,25 +192,37 @@
   }
 
   #reglament {
-    height: 15vw;
+    height: 40vw;
   }
 }
 
 @media screen and (max-width: 992px) {
-    #content {
-        display: flex;
-        flex-direction: column-reverse;
-    }
+  #content {
+      display: flex;
+      flex-direction: column-reverse;
+  }
 
-    .news-img {
-        width: 350px;
-        height: 250px;
-        margin: 30px auto;
-    }
+  .news-img {
+      width: 350px;
+      height: 250px;
+      margin: 30px auto;
+  }
 
-    #reglament {
-      height: 22vw;
-    }
+  #reglament {
+    height: 60vw;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 992px) {
+  #img-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .5vw;
+  }
+
+  #img-list > div {
+    height: 35vw;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -202,4 +236,18 @@
         height: 50vw;
         margin: 30px auto;
     }
+
+    #img-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    #img-list > div {
+      width: 95vw;
+      height: 80vw;
+      padding-bottom: 2vw;
+    }
 }
+
+/* @media screen and (max-width: 768px) */
