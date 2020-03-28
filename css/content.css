@@ -94,6 +94,12 @@
     opacity: 1;
 }
 
+.news-text img {
+  float: left;
+  margin-right: 20px;
+  width: 200px;
+}
+
 
 /* reglament */
 #reglament {
@@ -132,8 +138,22 @@
   left: 80%;
 }
 
-.reglament__list::before {
+.reglament__list::before, .ministry-item::before {
   content: '- ';
+}
+
+.ministry-list {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+}
+
+.ministry-item {
+  padding-left: 15px;
+}
+
+.about-agency-item {
+  padding-bottom: 20px;
 }
 
 @media screen and (min-width: 992px) {
