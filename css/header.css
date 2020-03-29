@@ -208,7 +208,7 @@
         position: absolute;
         top: 0;
         margin: 0;
-        padding: 0;
+        padding: 15px;
         list-style-type: none;
         height: 0;
         opacity: 0;
@@ -218,6 +218,7 @@
         z-index: 2;
         transition: opacity .3s;
         border-bottom: 2px solid #ccc;
+        box-sizing: border-box;
       }
 
       .header__menu.is-open {
