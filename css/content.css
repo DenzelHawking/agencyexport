@@ -178,6 +178,28 @@
   width: 100%;
 }
 
+.guide__list {
+  float: left;
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.guide__text {
+  width: 100%;
+  float: left;
+}
+
+.guide__text table caption {
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.guide__text table td {
+  padding: 5px;
+}
+
 @media screen and (min-width: 992px) {
   #content {
     display: grid;
