@@ -128,13 +128,13 @@ transform: rotate(90deg)
   }
 }
 
-@media screen and (min-width: 372px) and (max-width: 992px) {
+@media screen and (min-width: 380px) and (max-width: 992px) {
   .list__item:hover .sub-list {
     height: 58px;
   }
 }
 
-@media screen and (max-width: 372px) {
+@media screen and (max-width: 380px) {
   .list__item:hover .sub-list {
     height: 75px;
   }
