@@ -42,76 +42,76 @@ color: rgb(60, 147, 233);
 
 /* Contacts & Valute */
 .list__title {
-font-size: 25px;
-font-weight: bold;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .list {
-margin: 0 0 20px 0;
-padding: 0;
-list-style-type: none;
-border: 2px dotted #ccc;
-padding: 20px;
-color: #3B3B3B;
+  margin: 0 0 20px 0;
+  padding: 0;
+  list-style-type: none;
+  border: 2px dotted #ccc;
+  padding: 20px;
+  color: #3B3B3B;
 }
 
 .list li {
-display: flex;
-justify-content: space-between;
-margin: 20px 0;
-border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  border-bottom: 1px solid #ccc;
 }
 
 
 /* sidebar */
 #sidebar {
-background: #206AB6;
-color: #fff;
-border-radius: 8px;
+  background: #206AB6;
+  color: #fff;
+  border-radius: 8px;
 }
 
 #sidebar ul {
-list-style-type: none;
-padding: 0;
-margin: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .list__item {
-border-bottom: 1px solid;
-padding: 15px 25px 15px 15px;
-font-size: 17px;
-cursor: pointer;
-position: relative;
+  border-bottom: 1px solid;
+  padding: 15px 25px 15px 15px;
+  font-size: 17px;
+  cursor: pointer;
+  position: relative;
 }
 
 
 .sub-list {
-height: 0;
-overflow: hidden;
-transition: height .5s;
+  height: 0;
+  overflow: hidden;
+  transition: height .5s;
 }
 
 .sub-list__item {
-padding: 5px 10px;
-border-bottom: 1px solid;
-font-size: 15px;
-cursor: pointer;
+  padding: 5px 10px;
+  border-bottom: 1px solid;
+  font-size: 15px;
+  cursor: pointer;
 }
 
 .sub-list__item::before {
-content: '- ';
+  content: '- ';
 }
 
 .has-sub-list::after {
-content: '❯';
-position: absolute;
-top: 8px;
-right: 10px;
-transition: .2s;
+  content: '❯';
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  transition: .2s;
 }
 
 .list__item:hover::after {
-transform: rotate(90deg)
+  transform: rotate(90deg)
 }
 
 
@@ -128,13 +128,13 @@ transform: rotate(90deg)
   }
 }
 
-@media screen and (min-width: 380px) and (max-width: 992px) {
+@media screen and (min-width: 385px) and (max-width: 992px) {
   .list__item:hover .sub-list {
     height: 58px;
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 385px) {
   .list__item:hover .sub-list {
     height: 75px;
   }
