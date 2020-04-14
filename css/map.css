@@ -1,0 +1,70 @@
+#map {
+  width: 55vw !important;
+  height: 55vw !important;
+}
+
+
+
+
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.form-group > * {
+  margin-bottom: 5px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+
+input {
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+input, .udalit-tranzitnyj-punkt {
+  background: #fff;
+  box-sizing: border-box;
+  height: 30px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.tranzit-input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.udalit-tranzitnyj-punkt {
+  width: 30px;
+  border-left: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
+
+.dobavit-tranzitnyj-punkt {
+  color: #3c93e9;
+}
+
+button.rasschitat {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+
+#tranzitnyj-punkt, #errors {
+  display: none;
+}
