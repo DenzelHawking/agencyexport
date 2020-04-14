@@ -1,12 +1,3 @@
-#map {
-  width: 55vw !important;
-  height: 55vw !important;
-}
-
-
-
-
-
 .form-group {
   display: flex;
   flex-direction: column;
@@ -64,7 +55,33 @@ button.rasschitat {
   cursor: pointer;
 }
 
+#marshruty {
+  margin-bottom: 20px;
+}
+
+#rezultat-raschjota {
+  margin-bottom: 50px;
+}
+
 
 #tranzitnyj-punkt, #errors {
   display: none;
+}
+
+.mt-3 {
+  margin: 10px 20px;
+}
+
+@media screen and (min-width: 992px) {
+  #map, #google_map {
+    width: 55vw !important;
+    height: 55vw !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #map, #google_map {
+    width: 80vw !important;
+    height: 80vw !important;
+  }
 }

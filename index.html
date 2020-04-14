@@ -4,12 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <title>Document</title>
   <link rel="stylesheet" href="./font-awesome/css/all.css">
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/content.css">
@@ -18,28 +17,6 @@
   <link rel="stylesheet" href="./css/map.css">
 
   <link rel="shortcut icon" href="images/logo_1.png">
-
-  <style>
-    /* html, body {
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        height: 100%;
-    } */
-
-    #map {
-      width: 500px;
-      height: 500px;
-    }
-
-    #editor {
-      padding: 4px;
-      margin-top: 10px;
-      margin-left: 10px;
-      font-size: 14px;
-    }
-  </style>
-
 </head>
 
 <body>
@@ -60,90 +37,46 @@
 
 
       <ul class="header__menu">
-        <a href="index.html">
-          <li class="menu-item">Главная</li>
-        </a>
-        <li class="menu-item">Новости</li>
+        <a href="index.html"><li class="menu-item">Главная</li></a>
+        <a href="./pages/news.html"><li class="menu-item">Новости</li></a>
         <li class="menu-item">Об агентстве
           <ul class="sub-list-menu">
-            <a href="./pages/guide.html">
-              <li>Руководство</li>
-            </a>
-            <a href="./pages/about-agency.html">
-              <li>Положение</li>
-            </a>
-            <a href="./pages/structure.html">
-              <li>Структура</li>
-            </a>
-            <a href="./pages/structural-tasks.html">
-              <li>Задачи структур</li>
-            </a>
-            <a href="./pages/contacts.html">
-              <li>Контакты</li>
-            </a>
+            <a href="./pages/guide.html"><li>Руководство</li></a>
+            <a href="./pages/about-agency.html"><li>Положение</li></a>
+            <a href="./pages/structure.html"><li>Структура</li></a>
+            <a href="./pages/structural-tasks.html"><li>Задачи структур</li></a>
+            <a href="./pages/contacts.html"><li>Контакты</li></a>
           </ul>
         </li>
         <!-- <a href="./pages/reglament.html"><li class="menu-item">Регламент</li></a> -->
-        <a href="https://tajtrade.tj/?l=ru">
-          <li class="menu-item">Торговый портал Таджикистана</li>
-        </a>
+        <a href="https://tajtrade.tj/?l=ru"><li class="menu-item">Торговый портал Таджикистана</li></a>
         <a href="http://president.tj/ru">
           <li class="menu-item">Президент
             <ul class="sub-list-menu">
-              <a href="http://president.tj/ru/taxonomy/term/5/59">
-                <li>Встречи</li>
-              </a>
-              <a href="http://president.tj/ru/taxonomy/term/5/61">
-                <li>Выступления</li>
-              </a>
-              <a href="http://president.tj/ru/taxonomy/term/5/63">
-                <li>Поездки</li>
-              </a>
-              <a href="http://president.tj/ru/taxonomy/term/5/63">
-                <li>Визиты</li>
-              </a>
-              <a href="http://president.tj/ru/taxonomy/term/5/67">
-                <li>Указы</li>
-              </a>
-              <a href="http://president.tj/ru/taxonomy/term/5/69">
-                <li>Послания</li>
-              </a>
-              <a href="http://president.tj/ru/taxonomy/term/2/71">
-                <li>Телеграммы</li>
-              </a>
-              <a href="http://president.tj/ru/taxonomy/term/2/172">
-                <li>Телефонные разговоры</li>
-              </a>
-              <a href="http://president.tj/ru/photoreports">
-                <li>Фотографии</li>
-              </a>
+              <a href="http://president.tj/ru/taxonomy/term/5/59"><li>Встречи</li></a>
+              <a href="http://president.tj/ru/taxonomy/term/5/61"><li>Выступления</li></a>
+              <a href="http://president.tj/ru/taxonomy/term/5/63"><li>Поездки</li></a>
+              <a href="http://president.tj/ru/taxonomy/term/5/63"><li>Визиты</li></a>
+              <a href="http://president.tj/ru/taxonomy/term/5/67"><li>Указы</li></a>
+              <a href="http://president.tj/ru/taxonomy/term/5/69"><li>Послания</li></a>
+              <a href="http://president.tj/ru/taxonomy/term/2/71"><li>Телеграммы</li></a>
+              <a href="http://president.tj/ru/taxonomy/term/2/172"><li>Телефонные разговоры</li></a>
+              <a href="http://president.tj/ru/photoreports"><li>Фотографии</li></a>
             </ul>
           </li>
         </a>
-        <a href="./pages/gallery.html">
-          <li class="menu-item">Часто экспортируемые</li>
-        </a>
+        <a href="./pages/gallery.html"><li class="menu-item">Часто экспортируемые</li></a>
         <li class="menu-item">Логистика
           <ul class="sub-list-menu">
-            <a href="./pages/new-page.html">
-              <li>Логистические компании</li>
-            </a>
-            <a href="./pages/new-page.html">
-              <li>Логистический портал</li>
-            </a>
+            <a href="./pages/new-page.html"><li>Логистические компании</li></a>
+            <a href="https://portal.aiatt.tj/home"><li>Логистический портал</li></a>
           </ul>
         </li>
         <li class="menu-item">Реестры
           <ul class="sub-list-menu">
-            <a href="./pages/new-page.html">
-              <li>Сельскохозяйственные</li>
-            </a>
-            <a href="./pages/new-page.html">
-              <li>Промышленности</li>
-            </a>
-            <a href="./pages/new-page.html">
-              <li>Экспортеров</li>
-            </a>
+            <a href="./pages/new-page.html"><li>Сельскохозяйственные</li></a>
+            <a href="./pages/new-page.html"><li>Промышленности</li></a>
+            <a href="./pages/new-page.html"><li>Экспортеров</li></a>
           </ul>
         </li>
       </ul>
@@ -165,38 +98,23 @@
 
     <div id="content">
       <div id="navbar">
-
         <div id="sidebar">
           <ul class="sidebar__list">
             <li class="list__item has-sub-list">Нормативно правовые акты
               <ul class="sub-list">
-                <a href="./pages/new-page.html">
-                  <li class="sub-list__item">Экспорт сельхоз продукции</li>
-                </a>
-                <a href="./pages/new-page.html">
-                  <li class="sub-list__item">Экспорт промышленной продукции</li>
-                </a>
+                <a href="./pages/new-page.html"><li class="sub-list__item">Экспорт сельхоз продукции</li></a>
+                <a href="./pages/new-page.html"><li class="sub-list__item">Экспорт промышленной продукции</li></a>
               </ul>
             </li>
-            <a href="./pages/new-page.html">
-              <li class="list__item">Статистика Экспортеров</li>
-            </a>
-            <a href="https://www.un.org/ru/wto/">
-              <li class="list__item">Всемирная торговая организация</li>
-            </a>
+            <a href="./pages/new-page.html"><li class="list__item">Статистика Экспортеров</li></a>
+            <a href="https://www.un.org/ru/wto/"><li class="list__item">Всемирная торговая организация</li></a>
             <li class="list__item has-sub-list">Основные экспортируемые продукции
               <ul class="sub-list">
-                <a href="./pages/gallery.html">
-                  <li class="sub-list__item">Экспорт сельхоз продукции</li>
-                </a>
-                <a href="./pages/new-page.html">
-                  <li class="sub-list__item">Экспорт промышленной продукции</li>
-                </a>
+                <a href="./pages/gallery.html"><li class="sub-list__item">Экспорт сельхоз продукции</li></a>
+                <a href="./pages/new-page.html"><li class="sub-list__item">Экспорт промышленной продукции</li></a>
               </ul>
             </li>
-            <a href="https://oec.world">
-              <li class="list__item">OEC: Обсерватория экономического сложности</li>
-            </a>
+            <a href="https://oec.world"><li class="list__item">Торговый Оборот Всех Стран</li></a>
           </ul>
         </div>
 
@@ -268,21 +186,7 @@
 
 
       <div id="main-content">
-        <!-- <div id="map"></div> -->
-        <!-- <div class="kt-portlet__body pt-1"> -->
-        <!-- <div class="alert alert-outline-info fade show mb-5" role="alert"> -->
-        <!-- <div class="alert-icon"><i class="flaticon-questions-circular-button"></i></div> -->
-        <div class="alert-text">Расчет времени в пути носит чисто информационный характер и может иметь различия с
-          реальными данными</div>
-        <!-- <div class="alert-close">
-              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true"><i class="la la-close"></i></span>
-              </button>
-            </div> -->
-        <!-- </div> -->
-
-        <!-- <div class="row"> -->
-        <!-- <div class="col-lg-4 col-12"> -->
+        <div class="alert-text">Расчет времени в пути носит чисто информационный характер и может иметь различия с реальными данными</div>
         <form id="marshruty">
           <div class="form-group">
             <label>Откуда</label>
@@ -300,10 +204,6 @@
         </form>
 
         <div id="rezultat-raschjota"></div>
-        <!-- </div> -->
-
-        <!-- </div> -->
-        <!-- </div> -->
 
         <div id="tranzitnyj-punkt" class="kt-hidden">
           <div class="form-group">
@@ -339,10 +239,10 @@
   <script src="./js/menu.js"></script>
   <script src="./js/request.js"></script>
 
-
+  <!-- Map -->
   <script src="https://api-maps.yandex.ru/2.1/?lang=en_RU&apikey=2fe1fad8-bec9-4c19-87f1-b7b74f5c91be" type="text/javascript"></script>
-  <!-- <script src="./js/mapClass.js" type="text/javascript"></script>
-  <script src="./js/map.js" type="text/javascript"></script> -->
+  <script src="./js/map.js" type="text/javascript"></script>
+  <!-- <script src="./js/mapClass.js" type="text/javascript"></script> -->
 </body>
 
 </html>

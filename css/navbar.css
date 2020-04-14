@@ -128,13 +128,13 @@ color: rgb(60, 147, 233);
   }
 }
 
-@media screen and (min-width: 400px) and (max-width: 992px) {
+@media screen and (min-width: 385px) and (max-width: 992px) {
   .list__item:hover .sub-list {
     height: 58px;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 385px) {
   .list__item:hover .sub-list {
     height: 75px;
   }
