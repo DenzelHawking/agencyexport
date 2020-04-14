@@ -19,7 +19,7 @@ input {
   border-radius: 5px;
 }
 
-input, .udalit-tranzitnyj-punkt {
+input, .remove-point-button {
   background: #fff;
   box-sizing: border-box;
   height: 30px;
@@ -27,12 +27,12 @@ input, .udalit-tranzitnyj-punkt {
   outline: none;
 }
 
-.tranzit-input {
+.transit-input {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.udalit-tranzitnyj-punkt {
+.remove-point-button {
   width: 30px;
   border-left: none;
   border-top-right-radius: 5px;
@@ -42,11 +42,11 @@ input, .udalit-tranzitnyj-punkt {
 
 
 
-.dobavit-tranzitnyj-punkt {
+.add__point-button {
   color: #3c93e9;
 }
 
-button.rasschitat {
+button.calculate-button {
   background: #fff;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -56,21 +56,21 @@ button.rasschitat {
   cursor: pointer;
 }
 
-#marshruty {
+#map_form {
   margin-bottom: 20px;
 }
 
-#rezultat-raschjota {
+#result-calculate {
   margin-bottom: 50px;
 }
 
 
-#tranzitnyj-punkt, #errors {
+#transit-point {
   display: none;
 }
 
-.mt-3 {
-  margin: 10px 20px;
+.results-list, .results-list__item {
+  margin: 10px;
 }
 
 @media screen and (min-width: 992px) {
