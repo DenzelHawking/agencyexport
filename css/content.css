@@ -222,6 +222,24 @@
   }
 }
 
+
+.contact-page__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.contact-page__list__item {
+  display: flex;
+  justify-content: space-between;
+  line-height: 30px;
+}
+
+.contact-page__list__item > div:nth-child(2) {
+  color: #3c93e9;
+}
+
 @media screen and (max-width: 992px) {
   #content {
       display: flex;
