@@ -137,6 +137,9 @@
     transform: translate(-50%, -50%) rotate(-45deg);
 }
 
+.menu-item:nth-child(7) .sub-list-menu li {
+    width: 300px;
+}
 
 
 @media screen and (min-width: 767px) {

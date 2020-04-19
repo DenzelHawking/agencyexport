@@ -16,15 +16,21 @@
 
 input {
   padding: 0 5px;
-  border-radius: 5px;
+  /* border-radius: 5px; */
+  transition: .3s;
 }
 
 input, .remove-point-button {
   background: #fff;
   box-sizing: border-box;
   height: 30px;
-  border: 1px solid #ccc;
+  border: none;
+  border-bottom: 1px solid #ccc;
   outline: none;
+}
+
+input:focus {
+  border-color: #3c93e9;
 }
 
 .transit-input {
@@ -35,8 +41,8 @@ input, .remove-point-button {
 .remove-point-button {
   width: 30px;
   border-left: none;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  /* border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px; */
   cursor: pointer;
 }
 
@@ -49,11 +55,17 @@ input, .remove-point-button {
 button.calculate-button {
   background: #fff;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   box-sizing: border-box;
-  padding: 5px 10px;
+  padding: 10px 15px;
   outline: none;
   cursor: pointer;
+  transition: .3s;
+}
+
+button.calculate-button:hover {
+  background: #206AB6;
+  color: #fff !important;
 }
 
 #map_form {
@@ -76,7 +88,7 @@ button.calculate-button {
 @media screen and (min-width: 992px) {
   #map, #google_map {
     width: 55vw !important;
-    height: 55vw !important;
+    height: 27vw !important;
   }
 }
 

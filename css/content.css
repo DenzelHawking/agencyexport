@@ -200,6 +200,10 @@
   padding: 5px;
 }
 
+.alert-text {
+  margin-top: 30px;
+}
+
 @media screen and (min-width: 992px) {
   #content {
     display: grid;
