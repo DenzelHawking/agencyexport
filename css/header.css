@@ -12,6 +12,59 @@
 
 /* main menu */
 
+.toggle-language {
+    position: absolute;
+    top: 1.3vw;
+    right: 2.8vw;
+    width: 3.5vw;
+    height: 2.4vw;
+    border-radius: .3vw;
+    background: #fff;
+    cursor: pointer;
+    background-image: url(../images/lang/ru.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.toggle-language:hover .toggle-language__list {
+    display: block;
+}
+
+.toggle-language:hover {
+    border-radius: 0;
+    border-top-left-radius: .3vw;
+    border-top-right-radius: .3vw;
+}
+
+.toggle-language__list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background: #fff;
+    cursor: default;
+}
+
+.toggle-language__item {
+    display: flex;
+    margin: 10px 5px;
+    cursor: pointer;
+    opacity: .5;
+}
+
+.toggle-language__item:hover {
+    opacity: 1;
+}
+
+.lang-img {
+    width: 30px;
+    height: 20px;
+    margin-right: 5px;
+}
 
 /* slider */
 #header__slider {

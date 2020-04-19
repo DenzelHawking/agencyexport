@@ -11,7 +11,7 @@ for (let i = 0; i < newsText.length; i++) {
         newsItem[i].classList.add('shorting-text')
     }
 };
-    
+
 showAllText.forEach((elem, index) => {
     elem.onclick = () => {
         console.log(visibleHeight);
