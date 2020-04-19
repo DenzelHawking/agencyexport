@@ -77,11 +77,11 @@
     display: inline;
 }
 
-.news-text::first-letter {
+/* .news-text::first-letter {
     font-size: 25px;
     font-weight: bold;
     color: #206AB6;
-}
+} */
 
 .news-text.hide-text:after {
     content: '';
