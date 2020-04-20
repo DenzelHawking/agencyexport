@@ -240,6 +240,36 @@
   color: #3c93e9;
 }
 
+
+/* services */
+.services__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background: #206AB6;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.services__item {
+  cursor: pointer;
+  border-bottom: 1px solid;
+  height: 70px;
+  line-height: 70px;
+  font-size: 24px;
+  overflow: hidden;
+  padding: 0 10px;
+  transition: height .3s;
+}
+
+.services__img {
+  border: 1px solid;
+  width: 100%;
+  height: 300px;
+  box-sizing: border-box;
+  margin: 20px 0;
+}
+
 @media screen and (max-width: 992px) {
   #content {
       display: flex;

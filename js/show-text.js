@@ -14,8 +14,8 @@ for (let i = 0; i < newsText.length; i++) {
 
 showAllText.forEach((elem, index) => {
     elem.onclick = () => {
-        console.log(visibleHeight);
-        console.log(newsText[index].scrollHeight);
+        // console.log(visibleHeight);
+        // console.log(newsText[index].scrollHeight);
         
         if (elem.classList.contains('openned')) {
             newsText[index].style.height = `${visibleHeight}px`;
