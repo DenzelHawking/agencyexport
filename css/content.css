@@ -10,7 +10,9 @@
   box-sizing: border-box;
 }
 
-
+.swiper {
+  display: none;
+}
 .news-item {
   position: relative;
   overflow: hidden;
@@ -195,6 +197,7 @@
 .guide__text {
   width: 100%;
   float: left;
+  display: none; /* Temp */
 }
 
 .guide__text table caption {
