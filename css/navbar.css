@@ -78,7 +78,7 @@ color: rgb(60, 147, 233);
 
 .list__item {
   border-bottom: 1px solid;
-  padding: 15px 25px 15px 15px;
+  padding: 15px 40px 15px 15px;
   font-size: 17px;
   cursor: pointer;
   position: relative;
@@ -102,7 +102,7 @@ color: rgb(60, 147, 233);
   content: '- ';
 }
 
-.has-sub-list::after {
+/* .has-sub-list::after {
   content: '❯';
   position: absolute;
   top: 8px;
@@ -113,32 +113,45 @@ color: rgb(60, 147, 233);
 .list__item:hover::after {
   transform: rotate(90deg)
 }
+ */
 
+.hide-arrow {
+  content: '❯';
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  transition: .2s;
+  width: 20px;
+  text-align: center;
+}
 
+.list__item.openned .hide-arrow {
+  transform: rotate(90deg)
+}
 
-@media screen and (min-width: 1080px) {
+/* @media screen and (min-width: 1109px) {
   .list__item:hover .sub-list {
-    height: 58px;
+    height: 86px;
   }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1080px) {
+@media screen and (min-width: 992px) and (max-width: 1108px) {
   .list__item:hover .sub-list {
-    height: 75px;
+    height: 104px;
   }
 }
 
-@media screen and (min-width: 385px) and (max-width: 992px) {
+@media screen and (min-width: 363px) and (max-width: 991px) {
   .list__item:hover .sub-list {
-    height: 58px;
+    height: 86px;
   }
 }
 
-@media screen and (max-width: 385px) {
+@media screen and (max-width: 362px) {
   .list__item:hover .sub-list {
-    height: 75px;
+    height: 104px;
   }
-}
+} */
 
 
 
