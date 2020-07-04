@@ -14,9 +14,6 @@
 
 // showAllText.forEach((elem, index) => {
 //     elem.onclick = () => {
-//         // console.log(visibleHeight);
-//         // console.log(newsText[index].scrollHeight);
-        
 //         if (elem.classList.contains('openned')) {
 //             newsText[index].style.height = `${visibleHeight}px`;
 //             newsText[index].classList.add('hide-text');
@@ -36,8 +33,6 @@
 
 let hasSubList = document.querySelectorAll('.has-sub-list');
 let subList = document.querySelectorAll('.sub-list');
-
-
 let arrow = document.createElement('div');
 arrow.classList.add('hide-arrow');
 arrow.innerHTML = '❯';

@@ -129,11 +129,10 @@
         <div id="sidebar">
           <ul class="sidebar__list">
             <li class="list__item">Нормативно правовые акты</li>
-            <a href="./pages/new-page_en.html">
+            <a href="./new-page.html">
               <li class="list__item">Статистика Экспортеров</li>
             </a>
-            <a href="https://oec.world">
-              <li class="list__item has-sub-list">Торговый Оборот Всех Стран
+              <li class="list__item has-sub-list">Источники информации по ВЭД
                 <ul class="sub-list">
                   <a href="https://www.trademap.org/">
                     <li class="sub-list__item">Торговая карта</li>
@@ -144,9 +143,11 @@
                   <a href="https://www.un.org/ru/wto/">
                     <li class="sub-list__item">Всемирная торговая организация</li>
                   </a>
+                  <a href="https://oec.world">
+                    <li class="sub-list__item">Торговый Оборот Всех Стран</li>
+                  </a>
                 </ul>
               </li>
-            </a>
           </ul>
         </div>
 
@@ -241,6 +242,15 @@
           </div>
         </div>
         <!-- --------------------- -->
+        <div class="president">
+          <div class="president__inner">
+            <div class="president__img"></div>
+            <div class="president__description">В ближайшем будущем государственная политика в сферах торговли и услуг
+              должна проводиться по трем направлениям – стимулирование экспорта, обеспечение диверсификации
+              экспортоориентированного производства и упрощение торговых процедур.</div>
+          </div>
+          <a href="http://prezident.tj/" target="_blank" class="president__link">www.prezident.tj</a>
+        </div>
         
         <div class="alert-text">Расчет времени в пути носит чисто информационный характер и может иметь различия с реальными данными</div>
         <form id="map_form">
@@ -293,8 +303,9 @@
   <script src="./js/calendar.js"></script>
   <script src="./js/menu.js"></script>
   <script src="./js/request.js"></script>
+  <script src="./js/show-text.js"></script>
 
-  <script src="./js/swiper.min.js"></script>\
+  <script src="./js/swiper.min.js"></script>
   <script type="text/javascript">
     var swiper = new Swiper('.swiper-container', {
       autoplay: {

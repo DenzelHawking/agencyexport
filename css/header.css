@@ -9,7 +9,8 @@
 }
 
 .header__top {
-  height: 20vw;
+  height: 17vw;
+  /* height: 20vw; */
   background: linear-gradient(90deg, #fff, #004a7b);
 }
 
@@ -17,8 +18,8 @@
   position: absolute;
   top: 5vw;
   left: 5vw;
-  width: 25vw;
-  height: 8vw;
+  width: 18vw;
+  height: 7vw;
   background: url(../images/logo.png) center no-repeat;
   background-size: contain;
 }
@@ -224,9 +225,13 @@
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-/* .menu-item:nth-child(7) .sub-list-menu li {
-  width: 300px;
-} */
+.menu-item:nth-child(4) {
+  text-transform: uppercase;
+}
+
+.sub-list-menu {
+  text-transform: capitalize;
+}
 
 @media screen and (min-width: 767px) and (max-width: 992px) {
   .top-menu {

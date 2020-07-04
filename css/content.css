@@ -216,7 +216,7 @@
 @media screen and (min-width: 992px) {
   #content {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
   }
 
   .news-img {
@@ -317,7 +317,7 @@
 }
 
 @media screen and (min-width: 767px) {
-  
+
 }
 
 @media screen and (max-width: 767px) {

@@ -72,7 +72,8 @@ button.calculate-button:hover {
 }
 
 #result-calculate {
-  margin-bottom: 50px;
+  /* margin-bottom: 190px; */
+  /* margin-bottom: 50px; */
 }
 
 
@@ -97,5 +98,18 @@ button.calculate-button:hover {
 @media screen and (max-width: 992px) {
   #map, #google_map {
     height: 80vw !important;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  #result-calculate {
+    margin-bottom: 190px;
+    /* margin-bottom: 50px; */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #result-calculate {
+    margin-bottom: 50px;
   }
 }
