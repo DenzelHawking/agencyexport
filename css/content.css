@@ -210,7 +210,8 @@
 }
 
 .alert-text {
-  margin-top: 30px;
+  margin-top: 160px;
+  /* margin-top: 30px; */
 }
 
 @media screen and (min-width: 992px) {

@@ -71,12 +71,6 @@ button.calculate-button:hover {
   margin-bottom: 20px;
 }
 
-#result-calculate {
-  /* margin-bottom: 190px; */
-  /* margin-bottom: 50px; */
-}
-
-
 #transit-point {
   display: none;
 }
@@ -86,7 +80,9 @@ button.calculate-button:hover {
 }
 
 #map, #google_map {
-  width: 100% !important;
+  width: 70% !important;
+  border: 1px solid #ccc;
+  margin: auto;
 }
 
 @media screen and (min-width: 992px) {
@@ -97,14 +93,14 @@ button.calculate-button:hover {
 
 @media screen and (max-width: 992px) {
   #map, #google_map {
-    height: 80vw !important;
+    height: 50vw !important;
   }
 }
 
 @media screen and (min-width: 767px) {
   #result-calculate {
-    margin-bottom: 190px;
-    /* margin-bottom: 50px; */
+    margin-bottom: 60px;
+    /* margin-bottom: 190px; */
   }
 }
 
