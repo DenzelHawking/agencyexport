@@ -16,11 +16,22 @@
 
 #logo {
   position: absolute;
-  top: 5vw;
+  top: 5.5vw;
   left: 5vw;
-  width: 18vw;
-  height: 7vw;
-  background: url(../images/logo.png) center no-repeat;
+  width: 22vw;
+  height: 5vw;
+}
+
+.ru #logo {
+  background: url(../images/logo_ru.png) 0 50% no-repeat;
+  background-size: contain;
+}
+.en #logo {
+  background: url(../images/logo_en.png) 0 50% no-repeat;
+  background-size: contain;
+}
+.tj #logo {
+  background: url(../images/logo_tj.png) 0 50% no-repeat;
   background-size: contain;
 }
 
@@ -225,12 +236,12 @@
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-.menu-item:nth-child(4) {
+.menu-item:nth-child(3) {
   text-transform: uppercase;
 }
 
 .sub-list-menu {
-  text-transform: capitalize;
+  text-transform: initial;
 }
 
 @media screen and (min-width: 767px) and (max-width: 992px) {

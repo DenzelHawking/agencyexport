@@ -19,7 +19,7 @@
   <div id="wrapper">
     <div id="header">
       <div class="header__top">
-        <a href="index_tj.html">
+        <a href="../index_tj.html">
           <div id="logo"></div>
         </a>
 
@@ -31,18 +31,16 @@
       </div>
 
       <ul class="header__menu">
-        <a href="index_tj.html">
+        <a href="../index_tj.html">
           <li class="menu-item">Асосӣ</li>
         </a>
-        <a href="./news_tj.html">
-          <li class="menu-item">Хабарҳо
-            <ul class="sub-list-menu">
-              <a href="#">
-                <li>Ахбори ҷорӣ</li>
-              </a>
-            </ul>
-          </li>
-        </a>
+        <li class="menu-item">Хабарҳо
+          <ul class="sub-list-menu">
+            <a href="./news_tj.html">
+              <li>Ахбори ҷорӣ</li>
+            </a>
+          </ul>
+        </li>
         <li class="menu-item">ДАР БОРАИ АГЕНТӢ
           <ul class="sub-list-menu">
             <a href="./guide_tj.html">
@@ -50,6 +48,9 @@
             </a>
             <a href="./services_tj.html">
               <li>Хизматрасониҳо</li>
+            </a>
+            <a href="./partners_tj.html">
+              <li>Шарикон</li>
             </a>
           </ul>
         </li>
@@ -66,16 +67,15 @@
         </li>
         <li class="menu-item">Феҳристҳо
           <ul class="sub-list-menu">
-            <a href="./new-page_tj.html">
-              <li>Экспорт сельхоз продукции</li>
-            </a>
-            <a href="./new-page_tj.html">
-              <li>Экспорт промышленной продукции</li>
-            </a>
+            <li class="download-pdf" data-type="agriculture">Феҳристҳои кишоварзи</li>
+            <li class="download-pdf" data-type="industry">Феҳристҳои саноати</li>
           </ul>
         </li>
-        <a href="https://tajtrade.tj/?l=ru">
-          <li class="menu-item">Портали Савдои Тоҷикистон</li>
+        <a href="#">
+          <li class="menu-item">Роҳнамои содирот</li>
+        </a>
+        <a href="#">
+          <li class="menu-item">Стратегияи милии рушд</li>
         </a>
       </ul>
 
@@ -84,24 +84,21 @@
           <li class="top-menu-item top-menu-item-0">REX</li>
         </a>
         <a href="#">
-          <li class="top-menu-item">Путеводитель по экспорту</li>
+          <li class="top-menu-item">Чарябиниҳо</li>
         </a>
         <a href="./contacts_tj.html">
-          <li class="top-menu-item">Контакты</li>
-        </a>
-        <a href="#">
-          <li class="top-menu-item">Мероприятие</li>
+          <li class="top-menu-item">Тамос</li>
         </a>
         <li class="top-menu-item toggle-language">
-          <span>Русский</span>
+          <span>Тоҷики</span>
           <ul class="toggle-language__list">
-            <a href="index_tj.html">
-              <li class="toggle-language__item">Точики</li>
+            <a href="./news_tj.html">
+              <li class="toggle-language__item">Тоҷики</li>
             </a>
-            <a href="index.html">
+            <a href="./news.html">
               <li class="toggle-language__item">Русский</li>
             </a>
-            <a href="index_en.html">
+            <a href="news_en.html">
               <li class="toggle-language__item">English</li>
             </a>
           </ul>
@@ -124,10 +121,10 @@
         <div id="sidebar">
           <ul class="sidebar__list">
             <li class="list__item">Нормативно правовые акты</li>
-            <a href="./pages/new-page_tj.html">
-              <li class="list__item">Статистика Экспортеров</li>
+            <a href="https://tajtrade.tj/?l=tj">
+              <li class="list__item">Портали савдои Тоҷикистон</li>
             </a>
-            <li class="list__item has-sub-list">Манбаъҳои иттилоот оид ба ФТБ
+            <li class="list__item has-sub-list">Манбаъҳои иттилоот оид ба ФИХ
               <ul class="sub-list">
                 <a href="https://www.trademap.org/">
                   <li class="sub-list__item">Торговая карта</li>
@@ -169,17 +166,17 @@
 
         <div id="contacts">
           <ul class="list contacts__list">
-            <div class="list__title contacts__title">Контакты</div>
+            <div class="list__title contacts__title">Тамос</div>
             <li>
               <div>E-mail:</div>
               <div>info@export.tj</div>
             </li>
             <li>
-              <div>Приёмный:</div>
+              <div>Қабулгоҳ:</div>
               <div>2217003</div>
             </li>
             <li>
-              <div>Общий отдел:</div>
+              <div>Шубаи умуми:</div>
               <div>(44)7011616</div>
             </li>
             <li>
@@ -330,6 +327,7 @@
   <script src="../js/menu.js"></script>
   <script src="../js/request.js"></script>
   <script src="../js/show-text.js"></script>
+  <script src="../js/download-pdf.js"></script>
 </body>
 
 </html>

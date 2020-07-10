@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,11 +14,12 @@
 
   <link rel="shortcut icon" href="../images/logo_1.png">
 </head>
+
 <body>
   <div id="wrapper">
     <div id="header">
       <div class="header__top">
-        <a href="index_en.html">
+        <a href="../index_en.html">
           <div id="logo"></div>
         </a>
 
@@ -29,18 +31,16 @@
       </div>
 
       <ul class="header__menu">
-        <a href="index_en.html">
+        <a href="../index_en.html">
           <li class="menu-item">Главная</li>
         </a>
-        <a href="./news_en.html">
-          <li class="menu-item">Новости
-            <ul class="sub-list-menu">
-              <a href="#">
-                <li>Текущие новости</li>
-              </a>
-            </ul>
-          </li>
-        </a>
+        <li class="menu-item">Новости
+          <ul class="sub-list-menu">
+            <a href="./news_en.html">
+              <li>Текущие новости</li>
+            </a>
+          </ul>
+        </li>
         <li class="menu-item">Об агентстве
           <ul class="sub-list-menu">
             <a href="./guide_en.html">
@@ -48,6 +48,9 @@
             </a>
             <a href="./services_en.html">
               <li>Услуги</li>
+            </a>
+            <a href="./partners_en.html">
+              <li>Партнеры</li>
             </a>
           </ul>
         </li>
@@ -64,16 +67,15 @@
         </li>
         <li class="menu-item">Реестры
           <ul class="sub-list-menu">
-            <a href="./new-page_en.html">
-              <li>Экспорт сельхоз продукции</li>
-            </a>
-            <a href="./new-page_en.html">
-              <li>Экспорт промышленной продукции</li>
-            </a>
+            <li class="download-pdf" data-type="agriculture">Реестры экспортируемой сельскохозяйственной продукции</li>
+            <li class="download-pdf" data-type="industry">Реестры экспортируемой промышленной продукции</li>
           </ul>
         </li>
-        <a href="https://tajtrade.tj/?l=ru">
-          <li class="menu-item">Торговый портал Таджикистана</li>
+        <a href="#">
+          <li class="menu-item">Путеводитель по экспорту</li>
+        </a>
+        <a href="#">
+          <li class="menu-item">Национальная стратегия развития</li>
         </a>
       </ul>
 
@@ -82,24 +84,21 @@
           <li class="top-menu-item top-menu-item-0">REX</li>
         </a>
         <a href="#">
-          <li class="top-menu-item">Путеводитель по экспорту</li>
+          <li class="top-menu-item">Мероприятия</li>
         </a>
         <a href="./contacts_en.html">
           <li class="top-menu-item">Контакты</li>
         </a>
-        <a href="#">
-          <li class="top-menu-item">Мероприятие</li>
-        </a>
         <li class="top-menu-item toggle-language">
-          <span>Русский</span>
+          <span>English</span>
           <ul class="toggle-language__list">
-            <a href="index_tj.html">
-              <li class="toggle-language__item">Точики</li>
+            <a href="./services_tj.html">
+              <li class="toggle-language__item">Тоҷики</li>
             </a>
-            <a href="index.html">
+            <a href="./services.html">
               <li class="toggle-language__item">Русский</li>
             </a>
-            <a href="index_en.html">
+            <a href="./services_en.html">
               <li class="toggle-language__item">English</li>
             </a>
           </ul>
@@ -122,32 +121,44 @@
         <div id="sidebar">
           <ul class="sidebar__list">
             <li class="list__item">Нормативно правовые акты</li>
-            <a href="./new-page.html">
-              <li class="list__item">Статистика Экспортеров</li>
+            <a href="https://tajtrade.tj/?l=en">
+              <li class="list__item">Торговый портал Таджикистана</li>
             </a>
-              <li class="list__item has-sub-list">Источники информации по ВЭД
-                <ul class="sub-list">
-                  <a href="https://www.trademap.org/">
-                    <li class="sub-list__item">Торговая карта</li>
-                  </a>
-                  <a href="https://marketanalysis.intracen.org/">
-                    <li class="sub-list__item">Анализ рынка</li>
-                  </a>
-                  <a href="https://www.un.org/ru/wto/">
-                    <li class="sub-list__item">Всемирная торговая организация</li>
-                  </a>
-                  <a href="https://oec.world">
-                    <li class="sub-list__item">Торговый Оборот Всех Стран</li>
-                  </a>
-                </ul>
-              </li>
+            <li class="list__item has-sub-list">Источники информации по ВЭД
+              <ul class="sub-list">
+                <a href="https://www.trademap.org/">
+                  <li class="sub-list__item">Торговая карта</li>
+                </a>
+                <a href="https://marketanalysis.intracen.org/">
+                  <li class="sub-list__item">Анализ рынка</li>
+                </a>
+                <a href="https://www.un.org/ru/wto/">
+                  <li class="sub-list__item">Всемирная торговая организация</li>
+                </a>
+                <a href="https://oec.world">
+                  <li class="sub-list__item">Торговый Оборот Всех Стран</li>
+                </a>
+              </ul>
+            </li>
           </ul>
         </div>
-        
+
         <table id="calendar2">
           <thead>
-            <tr><td>‹</td><td colspan="5"></td><td>›</td></tr>
-            <tr><td>Пн</td><td>Вт</td><td>Ср</td><td>Чт</td><td>Пт</td><td>Сб</td><td>Вс</td></tr>
+            <tr>
+              <td>‹</td>
+              <td colspan="5"></td>
+              <td>›</td>
+            </tr>
+            <tr>
+              <td>Пн</td>
+              <td>Вт</td>
+              <td>Ср</td>
+              <td>Чт</td>
+              <td>Пт</td>
+              <td>Сб</td>
+              <td>Вс</td>
+            </tr>
           </thead>
           <tbody></tbody>
         </table>
@@ -155,10 +166,22 @@
         <div id="contacts">
           <ul class="list contacts__list">
             <div class="list__title contacts__title">Контакты</div>
-            <li><div>E-mail:</div><div>info@export.tj</div></li>
-            <li><div>Приёмный:</div><div>2217003</div></li>
-            <li><div>Общий отдел:</div><div>(44)7011616</div></li>
-            <li><div>Факс:</div><div>(44)7014045</div></li>
+            <li>
+              <div>E-mail:</div>
+              <div>info@export.tj</div>
+            </li>
+            <li>
+              <div>Приёмная:</div>
+              <div>2217003</div>
+            </li>
+            <li>
+              <div>Общий отдел:</div>
+              <div>(44)7011616</div>
+            </li>
+            <li>
+              <div>Факс:</div>
+              <div>(44)7014045</div>
+            </li>
           </ul>
         </div>
 
@@ -166,71 +189,150 @@
         <div id="valute">
           <ul class="list">
             <div class="list__title valute__title">Курс валют</div>
-            <li><div>1 <i class="fas fa-dollar-sign"></i>:</div><div class="usd"></div></li>
-            <li><div>1 <i class="fas fa-euro-sign"></i>:</div><div  class="eur"></div></li>
-            <li><div>1 <i class="fas fa-ruble-sign"></i>:</div><div class="rub"></div></li>
+            <li>
+              <div>1 <i class="fas fa-dollar-sign"></i>:</div>
+              <div class="usd"></div>
+            </li>
+            <li>
+              <div>1 <i class="fas fa-euro-sign"></i>:</div>
+              <div class="eur"></div>
+            </li>
+            <li>
+              <div>1 <i class="fas fa-ruble-sign"></i>:</div>
+              <div class="rub"></div>
+            </li>
           </ul>
         </div>
       </div>
 
 
-      <div id="main-content">
-        <ul class="services__list">
+      <div id="main-content" class="services">
+        <div class="news-item">
+          <div class="news-description">
+            <div class="services__img"
+              style="background: url(../images/slider/img_1.jpg) center no-repeat; background-size: cover;"></div>
+            <div class="news-text">
+              1. Информационно-консультационные услуги:
+              <ul class="services-list">
+                <li class="services-list-item">составление реестра субъектов экспортного обслуживания для производителей
+                  и экспортеров;</li>
+                <li class="services-list-item">составление реестра экспортируемых продукций и реестра хозяйствующих
+                  субъектов, занятых экспортом отечественных товаров и услуг для прямых покупателей, посредников, сетей
+                  продаж оптовых товаров и других торговых партнеров в зарубежных странах;</li>
+                <li class="services-list-item">информационная, консультативная и маркетинговое-аналитическая поддержка
+                  для развития экспорта товаров и продукций, производимых хозяйствующими субъектами;</li>
+                <li class="services-list-item">содействие и участие в проведении рыночных исследований для вывоза
+                  товаров и услуг отечественных хозяйствующих субъектов на рынки зарубежных стран;</li>
+                <li class="services-list-item">содействие в проведении маркетингового исследования нового товара и
+                  поиске новых рынков для экспорта товаров;</li>
+                <li class="services-list-item">предоставление информации по республиканским, региональным и
+                  международным выставкам.</li>
+                <li class="services-list-item">поиск и содействие в установлении деловых связей с зарубежными
+                  партнерами.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="show-hide-description">Показать все</div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-description">
+            <div class="services__img"
+              style="background: url(../images/slider/img_1.jpg) center no-repeat; background-size: cover;"></div>
+            <div class="news-text">
+              2. Развитие и продвижение экспорта:
+              <ul class="services-list">
+                <li class="services-list-item">сотрудничество и содействие в разработке и реализации экспортной
+                  стратегии, маркетинга, занимание положения на рынке и менеджмента поддержки внешнеэкономической
+                  деятельности хозяйствующих субъектов;</li>
+                <li class="services-list-item">консультации по вопросам составления и подписания контрактов, разработка
+                  стандартов качества, упаковки и маркировки, сертификации, предъявляемых зарубежными государствами к
+                  импортируемой продукции;</li>
+                <li class="services-list-item">продвижение отечественных товаров и услуг на рынках других государств,
+                  содействие в организации и проведении рекламных кампаний;</li>
+                <li class="services-list-item">участие и содействие в разработке программы по созданию основных групп
+                  (кластеров) экспортируемых товаров, включая центры кластерного развития и механизмы их реализации;
+                </li>
+                <li class="services-list-item">проведение обучающих семинаров, тренингов, круглых столов, конференций,
+                  форумов, мастер-классов и других публичных мероприятий с целью повышения уровня знаний хозяйствующих
+                  субъектов;</li>
+                <li class="services-list-item">другие услуги, предусмотренные действующим законодательством в сфере
+                  развития экспорта.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="show-hide-description">Показать все</div>
+        </div>
+
+        <!-- <ul class="services__list">
           <li class="services__item">
             <div>Поддержка экспортных поставок</div>
-            <div class="services__img" style="background: url(../images/slider/img_1.jpg) center no-repeat; background-size: cover;"></div>
+            <div class="services__img"
+              style="background: url(../images/slider/img_1.jpg) center no-repeat; background-size: cover;"></div>
           </li>
 
           <li class="services__item">
             <div>Аналитика и исследования</div>
-            <div class="services__img" style="background: url(../images/slider/img_2.jpg) center no-repeat; background-size: cover;"></div>
+            <div class="services__img"
+              style="background: url(../images/slider/img_2.jpg) center no-repeat; background-size: cover;"></div>
           </li>
-          
+
           <li class="services__item">
             <div>Продвижение на внешние рынки</div>
-            <div class="services__img" style="background: url(../images/slider/img_3.jpg) center no-repeat; background-size: cover;"></div>
+            <div class="services__img"
+              style="background: url(../images/slider/img_3.jpg) center no-repeat; background-size: cover;"></div>
           </li>
 
           <li class="services__item">
             <div>Образовательные услуги</div>
-            <div class="services__img" style="background: url(../images/slider/img_4.jpg) center no-repeat; background-size: cover;"></div>
+            <div class="services__img"
+              style="background: url(../images/slider/img_4.jpg) center no-repeat; background-size: cover;"></div>
           </li>
 
           <li class="services__item">
             <div>Поддержка проектов на ранних стадиях</div>
-            <div class="services__img" style="background: url(../images/slider/img_5.jpg) center no-repeat; background-size: cover;"></div>
+            <div class="services__img"
+              style="background: url(../images/slider/img_5.jpg) center no-repeat; background-size: cover;"></div>
           </li>
 
           <li class="services__item">
             <div>Специальные программы по поддержке экспорта</div>
-            <div class="services__img" style="background: url(../images/slider/img_6.jpg) center no-repeat; background-size: cover;"></div>
+            <div class="services__img"
+              style="background: url(../images/slider/img_6.jpg) center no-repeat; background-size: cover;"></div>
           </li>
 
           <li class="services__item">
             <div>Страхование</div>
-            <div class="services__img" style="background: url(../images/slider/img_7.jpg) center no-repeat; background-size: cover;"></div>
+            <div class="services__img"
+              style="background: url(../images/slider/img_7.jpg) center no-repeat; background-size: cover;"></div>
           </li>
 
           <li class="services__item">
             <div>Сертификация, патентование, лицензирование</div>
-            <div class="services__img" style="background: url(../images/slider/img_8.jpg) center no-repeat; background-size: cover;"></div>
+            <div class="services__img"
+              style="background: url(../images/slider/img_8.jpg) center no-repeat; background-size: cover;"></div>
           </li>
 
           <li class="services__item">
             <div>Кредитно-гарантийная поддержка</div>
-            <div class="services__img" style="background: url(../images/slider/img_9.jpg) center no-repeat; background-size: cover;"></div>
+            <div class="services__img"
+              style="background: url(../images/slider/img_9.jpg) center no-repeat; background-size: cover;"></div>
           </li>
 
           <li class="services__item">
             <div>Программа поддержки Made in Tajikistan</div>
-            <div class="services__img" style="background: url(../images/slider/img_10.jpg) center no-repeat; background-size: cover;"></div>
+            <div class="services__img"
+              style="background: url(../images/slider/img_10.jpg) center no-repeat; background-size: cover;"></div>
           </li>
 
           <li class="services__item">
             <div>Партнерские услуги</div>
-            <div class="services__img" style="background: url(../images/slider/img_11.jpg) center no-repeat; background-size: cover;"></div>
+            <div class="services__img"
+              style="background: url(../images/slider/img_11.jpg) center no-repeat; background-size: cover;"></div>
           </li>
-        </ul>
+        </ul> -->
       </div>
     </div>
 
@@ -246,7 +348,10 @@
   <script src="../js/calendar.js"></script>
   <script src="../js/menu.js"></script>
   <script src="../js/request.js"></script>
-  <script src="../js/show-services.js"></script>
+  <!-- <script src="../js/show-services.js"></script> -->
   <script src="../js/show-text.js"></script>
+  <script src="../js/structural.js"></script>
+  <script src="../js/download-pdf.js"></script>
 </body>
+
 </html>
