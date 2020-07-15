@@ -5,7 +5,7 @@
 }
 
 .menu-item {
-  z-index: 999;
+  /* z-index: 999; */
 }
 
 .header__top {
@@ -234,10 +234,6 @@
 .menu-button.active .menu-line:nth-child(3) {
   top: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
-}
-
-.menu-item:nth-child(3) {
-  text-transform: uppercase;
 }
 
 .sub-list-menu {
