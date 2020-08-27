@@ -45,6 +45,12 @@ a {
   box-sizing: border-box;
 }
 
+.president__description b {
+  display: block;
+  text-align: right;
+  margin-top: 20px;
+}
+
 .president__link {
   border: 1px solid #ccc;
   display: block;

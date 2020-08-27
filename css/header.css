@@ -4,22 +4,18 @@
   background: #ffffff;
 }
 
-.menu-item {
-  /* z-index: 999; */
-}
 
 .header__top {
   height: 17vw;
-  /* height: 20vw; */
   background: linear-gradient(90deg, #fff, #004a7b);
 }
 
 #logo {
   position: absolute;
-  top: 5.5vw;
+  top: 5vw;
   left: 5vw;
-  width: 22vw;
-  height: 5vw;
+  width: 25vw;
+  height: 7vw;
 }
 
 .ru #logo {
