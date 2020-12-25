@@ -102,19 +102,6 @@ color: rgb(60, 147, 233);
   content: '- ';
 }
 
-/* .has-sub-list::after {
-  content: '❯';
-  position: absolute;
-  top: 8px;
-  right: 10px;
-  transition: .2s;
-}
-
-.list__item:hover::after {
-  transform: rotate(90deg)
-}
- */
-
 .hide-arrow {
   content: '❯';
   position: absolute;
@@ -128,32 +115,6 @@ color: rgb(60, 147, 233);
 .list__item.openned .hide-arrow {
   transform: rotate(90deg)
 }
-
-/* @media screen and (min-width: 1109px) {
-  .list__item:hover .sub-list {
-    height: 86px;
-  }
-}
-
-@media screen and (min-width: 992px) and (max-width: 1108px) {
-  .list__item:hover .sub-list {
-    height: 104px;
-  }
-}
-
-@media screen and (min-width: 363px) and (max-width: 991px) {
-  .list__item:hover .sub-list {
-    height: 86px;
-  }
-}
-
-@media screen and (max-width: 362px) {
-  .list__item:hover .sub-list {
-    height: 104px;
-  }
-} */
-
-
 
 
 @media screen and (min-width: 767px) {

@@ -437,3 +437,31 @@
 .swiper:hover .swiper-controller {
   opacity: 1;
 }
+
+
+
+
+.right-part {
+  display: flex;
+  justify-content: end;
+  flex-direction: row-reverse;
+  margin-bottom: 20px;
+}
+
+.right-part div {
+  width: 50%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+b.end-desc {
+  display: block;
+  margin-top: 20px;
+}
+
+.subtitle {
+  font-weight: bold;
+  margin: 10px 0;
+}

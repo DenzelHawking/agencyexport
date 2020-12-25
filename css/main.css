@@ -17,11 +17,13 @@ a {
   text-transform: inherit;
 }
 
+.right-part__main-tab {
+  margin-left: 10px;
+}
 
 .president {
   width: 250px;
-  /* float: right; */
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 
 .president__inner {
@@ -63,6 +65,55 @@ a {
 }
 
 
+
+.main__inner {
+  display: flex;
+}
+
+
+.wiget__main {
+  position: relative;
+  width: 250px;
+  height: 120px;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+}
+
+.wiget__main-0 {
+  margin-top: 50px;
+}
+
+.wiget__main_img {
+  width: 100%;
+  height: 70px;
+}
+
+.wiget__main-0 .wiget__main_img {
+  background: url(../images/wigets/Glavnaya/tajikistan.jpg) center no-repeat;
+  background-size: contain;
+}
+
+.wiget__main-1 .wiget__main_img {
+  background: url(../images/wigets/Glavnaya/tajtrade-tg_medium.png) center no-repeat;
+  background-size: 80%;
+}
+
+.wiget__main_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50px;
+  border-top: 1px solid #ccc;
+}
+
+.wiget__main_link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 
 .popup-pdf {
@@ -139,23 +190,49 @@ a {
 
 @media screen and (min-width: 767px) {
   .president {
-    float: right;
+    /* float: right; */
   }
 }
 
-@media screen and (max-width: 550px) {
+/* @media screen and (max-width: 550px) {
   .president {
     margin: auto;
   }
+
+  .main__inner {
+    flex-direction: column;
+  }
+} */
+
+@media screen and (max-width: 767px) {
+  .right-part__main-tab {
+    margin-top: 50px;
+  }
+
+  .president,
+  .main__inner {
+    margin: auto !important;
+  }
+
+  .main__inner {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
+
 @media screen and (max-width: 350px) {
-  .president {
+  .president,
+  .wiget__main {
     width: 200px;
   }
 
   .president__img {
     height: 170px;
+  }
+
+  .wiget__main {
+    font-size: 11px;
   }
 }
 
@@ -167,3 +244,64 @@ a {
 767
 550
 */
+
+
+
+
+
+
+.wigets-slider {
+  width: 100%;
+  height: 70px;
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+
+.wigets-slider__inner {
+  width: 5000%;
+  height: 100%;
+  transition: .5s;
+}
+
+.wigets-slider__item {
+  float: left;
+  height: 100%;
+  margin: 0 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.wigets-slider__item-0 {
+  background-image: url(../images/wigets/baner-1.png);
+}
+.wigets-slider__item-1 {
+  background-image: url(../images/wigets/baner-2.png);
+}
+.wigets-slider__item-2 {
+  background-image: url(../images/wigets/baner-3.png);
+}
+.wigets-slider__item-3 {
+  background-image: url(../images/wigets/baner-4.png);
+}
+.wigets-slider__item-4 {
+  background-image: url(../images/wigets/baner-5.jpg);
+}
+.wigets-slider__item-5 {
+  background-image: url(../images/wigets/baner-6.png);
+}
+.wigets-slider__item-6 {
+  background-image: url(../images/wigets/baner-7.png);
+}
+.wigets-slider__item-7 {
+  background-image: url(../images/wigets/baner-8.png);
+}
+
+
+
+
+
+
+
+

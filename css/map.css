@@ -80,7 +80,8 @@ button.calculate-button:hover {
 }
 
 #map, #google_map {
-  width: 70% !important;
+  /* width: 70% !important; */
+  width: 100% !important;
   border: 1px solid #ccc;
   margin: auto;
 }
